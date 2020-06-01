@@ -1,0 +1,152 @@
+
+@import "mixins";
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+	padding-top: 50px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 60px;
+	padding: 20px;
+	background-color: #666;
+}
+.container {
+	@include md {
+		width: 90%;
+	}
+}
+#selectChoice-items {
+	width: 96%;
+	@include md {width: 91%;}
+	@include sm {width: 86%;}
+}
+#progress1,
+#progress2,
+#progress3,
+#outputItem {
+	background-color: #fff;
+	margin: 10px 20px 10px 20px;
+	height: 50px;
+    font: 15px/50px Arial, sans-serif;
+	width: 100%;
+}
+.percentText {
+	position: relative;
+	text-align: center;
+	font: 15px/15px Arial, sans-serif;
+	top: 45px;
+}
+
+.item {
+	background-color: #269abc;
+	text-align: center;
+    margin: 0;
+    height: 50px;
+	float: left;
+	width: 0;
+}
+
+.well {
+	background-color: #666;
+    padding-bottom: 40px;
+	@include md {
+		padding: 15px 2% 40px 5%;
+		width: 95%;
+	}
+	@include sm {
+		width: 95%;
+	}
+}
+
+#selectChoice {
+	margin: 10px 0 0 10px;
+	@include lg {
+		margin-left: 0;
+		width: 50%;
+	}
+	@include md {
+		margin: 0 0px 0 5px;
+	}
+	@include sm {
+		width: 86%;
+	}
+}
+.col-md-1 {
+	min-width: 90px;
+	margin: 10px 20px 0 0;
+	@include sm {
+		min-width:70px;
+		margin:20px 0 0 5px;
+		padding: 0;
+	}
+}
+
+.hide-for-med {
+	display: block;
+	@include lg {
+		display: block;
+		height:20px;
+	}
+	@include sm {
+		width:10px; 
+		float:left;
+	}
+}
+.m-t-30 {
+	margin-top: 30px;
+}
+.p-r-0 {
+	padding-right: 0;
+}
+
+.btn-block {
+	width: 95%;
+	@include md {
+		width: 98.5%;
+		margin: 0 0 10px 15px;
+	}
+	@include sm {
+		width: 95%;
+		margin: 0 0 0 10px;	
+	}
+}
+.btn, 
+.btn-default, 
+.btn-lg {
+	font: 15px/20px Arial, sans-serif;
+	text-decoration: none;
+}
+
+
+
+#buttonsContainer {
+	display: flex;
+	justify-content: space-around;
+	@include lg {
+		width: 50%;
+	}
+	@include md {
+		width: 46%;
+		margin: 25px auto 0 5%;
+	}
+	@include sm {
+		width: 90%;
+		margin: 15px 0 2px 5%;
+	}
+
+	> button {
+		margin: 10px 20px 0;
+		@include sm {
+			margin:15px 15px 0 0;
+		} 
+	}
+}
