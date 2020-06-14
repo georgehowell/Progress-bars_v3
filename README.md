@@ -4,7 +4,7 @@
 https://github.com/georgehowell/progress-bars_v3
 
 # live version:
-http://georgehowell.com.au/Front-end-test
+http://georgehowell.com.au/tests/Front-end-test/
 
 # node_modules:
 npm init (see package.json for dependencies)
